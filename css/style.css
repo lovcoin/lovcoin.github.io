@@ -107,3 +107,40 @@ canvas{
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .97 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .97 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .97 );
+  }
+  100%
+  {
+    transform: scale( .97 );
+  }
+}
+
+.heartdiv
+{
+  background-color: none;
+  width: 30%;
+/*  height: ;*/
+  animation: heartbeat 1s infinite;
+}
